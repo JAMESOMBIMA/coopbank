@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="dashboard.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="container">
+  <!--Header-->
+   <div class="header">Co-Operative Bank</div>
+
+   <!--Notification bar-->
+   <div class="notification">Notice: Central bank of kenya 
+    announces increment in dividends 
+    from foreign exchange trading
+   </div>
+    
+   <!--options section-->
+   <div class="options">
+   <div class="option"
+   onclick="alert('App coming soon')"
+   >
+   <img src="icons/6424299.png" alt="App icon">
+    App
+   </div>
+   <div class="option" onclick="recharge()">
+   <img src="icons/10440389.png" alt="Recharge icon">
+      Recharge
+   </div>
+   <div class="option" onclick="withdraw()">
+   <img src="icons/14879661.png" alt="Withdraw icon">
+      Withdraw
+   </div>
+   </div>
+
+   <!--profile section-->
+
+   <div class="profile">
+    <div class="profile-info">
+    <div
+    class="Profile-balance">
+    Balance: <span id="balance">0</span> KES
+    </div>
+    <button class="button"
+    style="background-color: brown;
+    border: none; padding: 5px 10px; 
+    color: white; border-radius: 4px;"
+    >VIP 1</button>
+   </div>
+   <p class="label">Co-operative bank </p>
+  </div>
+   <!--activity section-->
+   <div class="activity-section">
+    <h3>Activities</h3>
+   <div class="activity">
+    Pybill: 400200 <br>
+    Acc. No: 01109818454100
+    <div>
+      FARIDAH KAWIRA NJERU
+    </div>
+    <div class="reward">
+     
+    </div>
+   </div>
+   </div>
+
+   <!--Footer navigation-->
+   <div class="footer">
+    <div onclick="alert('Home Clicked')">
+      Home</div>
+    <div onclick="alert('Task Clicked')">Task</div>
+    <div onclick="alert('Team Clicked')">Team</div>
+    <div onclick="alert('VIP Clicked')">VIP</div>
+    <div onclick="alert('Me Clicked')">Me</div>
+   </div>  
+  </div>
+  
+<script>
+let balance = 0;
+
+function recharge(){
+  let amount = prompt('Kindly send the exact amount to the account no shown.Enter recharge amount in KES:');
+  amount = parseFloat(amount);
+  if (amount > 0){
+    balance += amount;
+    updateBalance();
+    alert(`You have successifully recharged ${amount} KES!`);
+  } else {
+      alert("Invalid amount entered.");
+    }
+  }
+  function withdraw(){
+    let amount = prompt('Enter amount to withdraw in  KES:');
+    amount = parseFloat(amount);
+    if (amount >= 100 && amount <= balance){
+      balance -= amount;
+      updateBalance();
+      alert(`You have successifully withdrawn ${amount} KES!`);
+    } else if (amount > balance){
+      alert('Insufficient balance');
+    }
+        else {
+      alert('Invalid amount entered');
+    }
+  }
+    
+  
+
+
+function updateBalance(){
+  document.getElementById('balance').innerText = balance.toFixed(2);
+}
+
+</script>
+</body>
+</html>

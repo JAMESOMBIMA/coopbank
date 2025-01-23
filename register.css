@@ -1,0 +1,83 @@
+body{
+  padding: 20px;
+  margin: 0;
+  align-items: center;
+  background-color: rgb(144, 196, 78);
+  font-family: Arial, Helvetica, sans-serif
+}
+.container{
+background-color: rgba(44, 201, 188, 0.971);
+border: solid 1px rgb(240, 236, 223);
+padding: 30px;
+border-radius: 10px;
+}
+.header{
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -50px;
+}
+h3{
+  font-size: 20px;
+  color: rgb(235, 245, 235);
+  text-align: center;
+  align-items: center;
+  padding: 10px auto;
+}
+.login{
+  background-color: rgb(113, 226, 69);
+  color: white;
+}
+button{
+  color: ;
+}
+a{
+  text-decoration: none;
+}
+.form{
+  align-items: center;
+  background-color: rgb(217, 240, 230);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80wh;
+  overflow: hidden;
+}
+.label{
+color: rgb(99, 182, 250);
+}
+input{
+  height: 30px;
+  margin: 10PX;
+  width: 100%;
+  border: none;
+  color: rgb(4, 13, 13);
+  background-color:transparent;
+  border-bottom: solid 1px black;
+  
+}
+.submit{
+  
+  height: 50px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+
+}
+input:hover{
+  border: solid 1px rgb(190, 202, 23);
+  border-radius: 5px;
+}
+input:active{
+background-color: powderblue;
+  border-radius: 5px;
+}
+.aaa{
+  background-color: rgb(240, 233, 233);
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  color: green;
+  
+}
