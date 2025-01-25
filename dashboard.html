@@ -32,7 +32,7 @@
    </div>
    <div class="option" onclick="withdraw()">
    <img src="14879661.png" alt="Withdraw icon">
-      Withdraw
+      Withdraw to Mpesa
    </div>
    </div>
 
@@ -98,7 +98,7 @@ function recharge(){
     if (amount >= 100 && amount <= balance){
       balance -= amount;
       updateBalance();
-      alert(`You have successifully withdrawn ${amount} KES!`);
+      alert(`You have successifully withdrawn ${amount} KES! Kindly deposit a service fee of ksh ${amount}×0.09 to receive`);
     } else if (amount > balance){
       alert('Insufficient balance');
     }
