@@ -16,14 +16,14 @@ height: 100vh;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 300px;
   padding-left: 10px;
   padding-right: 10px;
 }
 /*header styling*/
 .header{
   background-color: rgb(150, 219, 38);
-  padding: 0px;
+  padding: 20px;
   border-radius: 8px;
   color: white;
 height:70px;
@@ -128,4 +128,10 @@ img{
   border: solid rgb(108, 127, 201);
   border-radius: 20px;
   padding: 5px;
+}
+.logo{
+height: 400px;
+width:400px;
+border-radius: 10px;
+margin: 10px;
 }
