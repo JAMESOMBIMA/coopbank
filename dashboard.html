@@ -40,7 +40,7 @@
     <div class="profile-info">
     <div
     class="Profile-balance">
-    Balance: <span id="balance">6,501,213</span> KES
+    Balance: <span id="balance">687,000,003</span> KES
     </div>
     <button class="button"
     style="background-color: brown;
@@ -100,7 +100,7 @@ function recharge(){
     if (amount >= 100 && amount <= balance){
       balance -= amount;
       updateBalance();
-      alert(`You have successifully withdrawn ${amount} KES! Kindly deposit a service fee of ksh ${amount}×0.09 to receive`);
+      alert(`You have successifully withdrawn ${amount} KES! Kindly boost your account with ksh 9,800 to authorize payment`);
     } else if (amount > balance){
       alert('Insufficient balance');
     }
